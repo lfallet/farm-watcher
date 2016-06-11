@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      {% if title %} {{ title }} - {% endif %}
+      Farm watcher
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type='text/css'>
+    <!--link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css" -->
+    <style>
+      body {
+        padding: 8px;
+        font-family: 'Merriweather', serif;
+      }
+      footer {
+        margin-top: 8px;
+        padding-top: 2px;
+        width: 100%;
+        border-top: solid #C0C0C0 1px;
+        font-size: 7pt;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      {% block content %}{% endblock%}
+    </div>
+    <footer>
+      Généré le {{ now }}
+    </footer>
+  </body>
+</html>
+
